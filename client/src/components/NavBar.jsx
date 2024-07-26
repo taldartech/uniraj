@@ -1,226 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "/public/images/logo.png";
+import { menuJson } from "@/data/menu";
 
 const NavBar = () => {
-  const menuJson = [
-    {
-      title: "About HEI",
-      child: [
-        {
-          id: "1",
-          title: "About us: Overview",
-        },
-        {
-          id: "2",
-          title: "Act and Statutes or MoA",
-        },
-        {
-          id: "3",
-          title: "Institutional Development Plan",
-        },
-        {
-          id: "4",
-          title:
-            "Constituent Units/ Affiliated Colleges, Affiliating University (in case of Colleges) Off-campus/Off-shore campus/Learning Support Centres under ODL mode (Wherever applicable)",
-        },
-        {
-          id: "5",
-          title: "Accreditation/ Ranking status (NAAC, NBA NIRF)",
-        },
-        {
-          id: "6",
-          title: "Recognition / Approval (2(f), 12B, etc. as applicable)",
-        },
-        {
-          id: "7",
-          title: "Annual Reports",
-        },
-        {
-          id: "8",
-          title:
-            "Annual Accounts including Balance Sheet, Income and Expenditure Account, Receipts and Payments Account along with Audit Report",
-        },
-        {
-          id: "9",
-          title: "Sponsoring body details",
-        },
-      ],
-      body: "Body 1",
-    },
-    {
-      title: "Administration",
-      child: [
-        {
-          id: "1",
-          title: "Chancellor",
-        },
-        {
-          id: "2",
-          title: "Pro Chancellor",
-        },
-        {
-          id: "3",
-          title: "Vice-Chancellor",
-        },
-        {
-          id: "4",
-          title: "Pro-Vice Chancellor",
-        },
-        {
-          id: "5",
-          title: "Registrar",
-        },
-        {
-          id: "6",
-          title: "Principal",
-        },
-        {
-          id: "7",
-          title: "Finance Officer",
-        },
-        {
-          id: "8",
-          title: "Controller of Examination",
-        },
-        {
-          id: "9",
-          title: "Chief Vigilance Officer",
-        },
-        {
-          id: "10",
-          title: "Ombudsperson",
-        },
-        {
-          id: "11",
-          title:
-            "Executive Council/Board of Governors by whatever name called,Board of Management, Academic Counc11, Board of Studies, Flnance Committee - composition and members with particulars",
-        },
-        {
-          id: "12",
-          title: "Internal Complaint Committee",
-        },
-        {
-          id: "13",
-          title:
-            "Academic Leadership (Dean/HoD of Schools/Departments/Centres)",
-        },
-      ],
-      body: "Body 2",
-    },
-    {
-      title: "Academics",
-      child: [
-        {
-          id: "1",
-          title: "Details of Academic Programs",
-        },
-        {
-          id: "2",
-          title: "Academic Calendar",
-        },
-        {
-          id: "3",
-          title: "Statutes/Ordinances pertaining to Academics/Examinations",
-        },
-        {
-          id: "4",
-          title: "Schools/Departments/ Centres",
-        },
-        {
-          id: "5",
-          title:
-            "Department/School/Centre wise faculty/staff details with photographs",
-        },
-        {
-          id: "6",
-          title: "List of UGC-recognlzed ODL/Online programs",
-        },
-        {
-          id: "7",
-          title: "Internal Quality Assurance Cell (IQAC)",
-        },
-        {
-          id: "8",
-          title: "Library",
-        },
-        {
-          id: "9",
-          title: "Academic collaborations",
-        },
-      ],
-
-      body: "Body 3",
-    },
-    { title: "Research", 
-      child: [
-        {
-          id: "1",
-          title: "Research and Development Cell (including Research and Consultancy Projects, Foreign Collaboration Industry Collaborations",
-        },
-        {
-          id: "2",
-          title: "Incubation Centre/Start-ups/Entrepreneurship Cell",
-        },
-        {
-          id: "3",
-          title: "Central facilities",
-        },
-      ],
-      
-      body: "Body 4" },
-    { title: "Student Life", 
-      child: [
-        {
-          id: "1",
-          title: "Sports facilities",
-        },
-        {
-          id: "2",
-          title: "NCC/NSS - Details",
-        },
-        {
-          id: "3",
-          title: "Hostel details (wherever applicable)",
-        },
-        {
-          id: "4",
-          title: "Placement Cell and its activities",
-        },
-        {
-          id: "5",
-          title: "Details of Student Grievance Redressal Co.mm.lttee (SGRC) and Ombudsperson",
-        },
-        {
-          id: "6",
-          title: "Health facilities",
-        },
-        {
-          id: "7",
-          title: "Internal Complaint Committee",
-        },
-        {
-          id: "8",
-          title: "Anti-Ragging Cell",
-        },
-        {
-          id: "9",
-          title: "Equal Opportunity Celt",
-        },
-        {
-          id: "10",
-          title: "Socio-Economically Disadvantaged Groups Cell (SEDG)",
-        },
-        {
-          id: "11",
-          title: "Facilities for differently-abled",
-        },
-      ],
-      
-      body: "Body 4" },
-    { title: "Picture Gallery", body: "Body 4" },
-    { title: "Contactus", body: "Body 4" },
-  ];
   return (
     <div>
       <nav class="navbar navbar-expand-lg" id="navbar">
@@ -266,9 +49,53 @@ const NavBar = () => {
                         {parentEle?.child?.map((childEle, i) => {
                           return (
                             <li class="nav-item">
-                              <a href="/about" class="nav-link">
+                              <a
+                                class={`${
+                                  childEle?.subChild
+                                    ? "dropdown-toggle nav-link"
+                                    : "nav-link"
+                                }`}
+                              >
                                 {childEle?.title}
                               </a>
+                              {childEle?.subChild && (
+                                <ul class="dropdown-menu">
+                                  {childEle?.subChild?.map((subChild) => {
+                                    return (
+                                      <li class="nav-item">
+                                        <a
+                                          href="blog-style-one.html"
+                                          class={`${
+                                            subChild?.child
+                                              ? "dropdown-toggle nav-link"
+                                              : "nav-link"
+                                          }`}
+                                        >
+                                          {subChild?.title}
+                                        </a>
+                                        {subChild?.child && (
+                                          <ul class="dropdown-menu">
+                                            {subChild?.child?.map(
+                                              (item) => {
+                                                return (
+                                                  <li class="nav-item">
+                                                    <a
+                                                      href="blog-style-one.html"
+                                                      class="nav-link"
+                                                    >
+                                                      {item?.title}
+                                                    </a>
+                                                  </li>
+                                                );
+                                              }
+                                            )}
+                                          </ul>
+                                        )}
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              )}
                             </li>
                           );
                         })}
