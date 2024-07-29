@@ -9,6 +9,7 @@ export const menuJson = [
           {
             id: "1",
             title: "Genesis & Evolution",
+            link: 'genesis-evolution'
           },
           {
             id: "2",

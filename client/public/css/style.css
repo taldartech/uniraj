@@ -3456,13 +3456,14 @@ Newsletter Area Style
 Page Banner Area Style
 =================================================*/
 .pages-banner-area {
+  height: 450px;
   z-index: 1;
   position: relative;
   padding-top: 80px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* background-image: url(../img/bg/bg-3.jpg); */
+  background-image: url(../images/bg-3.jpg);
 }
 .pages-banner-area .container-fluid {
   max-width: 1480px;

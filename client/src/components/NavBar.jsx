@@ -35,7 +35,7 @@ const NavBar = () => {
                 return (
                   <li class="nav-item">
                     <a
-                      href="javascript:void(0)"
+                      href={parentEle?.link}
                       class={`${
                         parentEle?.child
                           ? "dropdown-toggle nav-link"
@@ -64,7 +64,7 @@ const NavBar = () => {
                                     return (
                                       <li class="nav-item">
                                         <a
-                                          href="blog-style-one.html"
+                                          href={subChild?.link}
                                           class={`${
                                             subChild?.child
                                               ? "dropdown-toggle nav-link"
@@ -80,7 +80,7 @@ const NavBar = () => {
                                                 return (
                                                   <li class="nav-item">
                                                     <a
-                                                      href="blog-style-one.html"
+                                                      href={item?.link}
                                                       class="nav-link"
                                                     >
                                                       {item?.title}
