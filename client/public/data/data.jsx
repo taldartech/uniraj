@@ -258,4 +258,115 @@ Science, Humanities, Commerce, Management, Fine Arts and Sports, Engineering Tec
               </p>
             </div>`,
   },
+  {
+    id: 3,
+    slug: "logo-statement",
+    title: "Logo Statement",
+    subTitle: "Logo Statement",
+    content: `<div class="cards" style="text-align:center">
+              <img src="../images/logo-statrment.jpg"/>
+            </div>`,
+  },
+  {
+    id: 4,
+    slug: "kulgeet",
+    title: "Kulgeet",
+    subTitle: "Kulgeet",
+    content: `<div class="cards" style="text-align:center">
+              <img src="../images/kulgeet.jpg"/>
+            </div>`,
+  },
+  {
+    id: 5,
+    slug: "teaching-units",
+    title: "Teaching Units",
+    subTitle: "Teaching Units",
+    content: `<div class="cards">
+              <div class="container">
+  <div class="row anchor-class">
+    <div class="col-lg-6">
+    <h4>Faculty of Arts</h4>
+  <ul class="list-unstyled">
+<li ><a href="departments/english">Department of English</a></li>
+      <li><a href="departments/ellcs">Department of European Language,Literature and Cultural Studies</a></li>
+      <li><a href="departments/hindi">Department of Hindi</a></li>
+      <li><a href="departments/philosophy">Department of Philosophy</a></li>
+      <li><a href="departments/sanskrit">Department of Sanskrit</a></li>
+<li><a href="departments/urdu">Department of Urdu &amp; Persian</a></li>
+      <li><a href="departments/ces">Centre for European Studies</a></li>
+      <li><a href="departments/cjs">Centre for Jain Studies</a></li>
+
+  </ul>
+  <h4>Faculty of Commerce</h4>
+  <ul class="list-unstyled">    
+      <li><a href="departments/adst">Department of Accountancy and Bussiness Statistics</a></li>
+      <li><a href="departments/busadm">Department of Bussiness Administration</a></li>
+      <li><a href="departments/eafm">Department of Economic Administration and Financial Management</a></li>
+  </ul>
+  <h4>Faculty of Education</h4>
+  <ul class="list-unstyled">
+      <li><a href="departments/education">Department of Education</a></li>
+      <li><a href="index.php?mid=4302">Department of Library &amp; Information Science</a></li>
+      <li><a href="departments/phyedu">Department of Physical Education</a></li>
+  </ul>
+  <h4>Faculty of Enginering &amp; Technology</h4>
+ <ul class="list-unstyled">
+      <li><a href="departments/cct">Centre for Converging Technologies</a></li>
+ </ul>
+  <h4>Faculty of Fine Arts</h4>
+  <ul class="list-unstyled">
+      <li><a href="departments/dramatics">Department of Dramatics</a></li>
+      <li><a href="departments/painting">Department of Drawing and Painting</a></li>
+      <li><a href="departments/music">Department of Music</a></li>
+      <li><a href="departments/visualarts">Department of Visual Arts </a></li>
+  </ul>
+  <h4>Faculty of Law</h4>
+  <ul class="list-unstyled">
+      <li><a href="departments/law">Department of Law</a></li>
+  </ul>
+  <h4>Faculty of Management</h4>
+  <ul class="list-unstyled">
+      <li><a href="departments/pim">R.A. Poddar Institute of Management.</a></li>
+  </ul>
+    </div>
+    <div class="col-lg-6">
+    <h4>Faculty of Science</h4>
+  <ul class="list-unstyled">
+      <li><a href="departments/botany">Department of Botany</a></li>
+      <li><a href="departments/chemistry">Department of Chemistry</a></li>
+      <li><a href="departments/geography">Department of Geography</a></li>
+      <li><a href="departments/geology">Department of Geology</a></li>
+      <li><a href="departments/homesc">Department of Home Science</a></li>
+      <li><a href="departments/maths">Department of Mathematics</a></li>
+      <li><a href="departments/physics">Department of Physics</a></li>
+      <li><a href="departments/psychology">Department of Psychology</a></li>
+      <li><a href="departments/stats">Department of Statistics</a></li>
+      <li><a href="departments/zoology">Department of Zoology</a></li>
+      <li><a href="departments/cdpe">Centre for Development of Physics Education</a></li>
+      <li><a href="departments/cncer">Centre for Non Conventional Energy Resources</a></li>
+      
+      <li><a href="departments/igcheeps">Indira Gandhi Centre for Human Ecology,Environmental and Population Studies</a></li>
+      <li><a href="departments/uccsit">University Centre for Computer Science and Information Technology</a></li>
+
+  </ul>
+  <h4>Faculty of Social Sc.</h4>
+  <ul class="list-unstyled">
+      <li><a href="departments/anthro">Department of Anthropology</a></li>
+      <li><a href="departments/economics">Department of Economics</a></li>
+      <li><a href="departments/history">Department of History &amp; Indian Culture</a></li>
+      <li><a href="departments/polsc">Department of Political Science</a></li>
+      <li><a href="departments/pubadm">Department of Public Administration</a></li>
+      <li><a href="departments/sociology">Department of Sociology</a></li>
+      <li><a href="departments/gandhian">Centre for Gandhian Studies</a></li>
+      <li><a href="departments/masscomm">Centre for Mass Communication</a></li>
+      <li><a href="departments/museology">Centre for Museology &amp; Conservation</a></li>
+      <li><a href="departments/rajasthan">Centre for Rajasthan Studies</a></li>
+      <li><a href="departments/sggcss">Shri Guru Gobind Singh Centre For Sikh Studies</a></li>
+      <li><a href="departments/sasc">South Asia Study Centre</a></li>
+  </ul>
+    </div>
+  </div>
+</div>
+            </div>`,
+  },
 ];

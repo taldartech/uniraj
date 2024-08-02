@@ -5040,3 +5040,8 @@ Back to Top Style
   visibility: visible;
   transform: translateY(-95%);
 }/*# sourceMappingURL=style.css.map */
+
+.anchor-class a{
+  text-decoration: none !important;
+  color: #0d6efd
+}

@@ -19,30 +19,37 @@ export const menuJson = [
           {
             id: "3",
             title: "Logo Statement",
+            link: "logo-statement"
           },
           {
             id: "4",
             title: "Kulgeet",
+            link: "kulgeet"
           },
           {
             id: "5",
             title: "Time Capsule",
+            link: "time-capsule"
           },
           {
             id: "6",
             title: "Teaching Units",
+            link: "teaching-units"
           },
           {
             id: "7",
             title: "Research Centres",
+            link: "research-centres"
           },
           {
             id: "8",
             title: "Constituent Colleges",
+            link: "constituent-colleges"
           },
           {
             id: "9",
             title: "Affiliated Colleges",
+            link: "affiliated-collages"
           },
           {
             id: "10",
@@ -51,26 +58,32 @@ export const menuJson = [
           {
             id: "11",
             title: "University Handbook",
+            link: "university-handbook"
           },
           {
             id: "12",
             title: "University Prospectus",
+            link: "university-prospectus"
           },
           {
             id: "13",
             title: "University Budget",
+            link: "university-budget"
           },
           {
             id: "14",
             title: "Academic Calendar",
+            link: "academic-calendar"
           },
           {
             id: "15",
             title: "Holiday Calendar",
+            link: "holiday-calendar"
           },
           {
             id: "16",
             title: "Sports Board Calendar",
+            link: "sports-board"
           },
         ],
       },
