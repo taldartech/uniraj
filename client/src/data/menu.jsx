@@ -14,6 +14,7 @@ export const menuJson = [
           {
             id: "2",
             title: "Mission & Vision",
+            link: "mission-vision"
           },
           {
             id: "3",
